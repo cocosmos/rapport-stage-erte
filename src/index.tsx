@@ -1,22 +1,27 @@
 import React, { Suspense } from "react";
 import ReactDOM from "react-dom";
+import dark from "./assets/dark.png";
+import light from "./assets/light.png";
 
-import "./scss/import.scss";
 import "flag-icon-css/css/flag-icons.min.css";
-
 import App from "./App";
-import logo from "./assets/logo512.png";
+import { BrowserRouter } from "react-router-dom";
+import { Stack } from "@mui/material";
 
-const loadingMarkup = (
-  <div className="App">
-    <img src={logo} alt="loading" />
-  </div>
+var theme = localStorage.getItem("theme");
+
+const LoadingMarkup = (
+  <Stack justifyContent={"center"}>
+    <img src={theme === "dark" ? dark : light} alt="loading" />
+  </Stack>
 );
 
 ReactDOM.render(
-  <Suspense fallback={loadingMarkup}>
+  <Suspense fallback={LoadingMarkup}>
     <React.StrictMode>
-      <App />
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
     </React.StrictMode>
   </Suspense>,
   document.getElementById("root")

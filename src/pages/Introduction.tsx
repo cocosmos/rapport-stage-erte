@@ -1,5 +1,16 @@
-const Enterprise = () => {
-  return "Enterprise";
+import { FunctionComponent, useEffect } from "react";
+
+type IntroductionProps = {
+  setHeaderTitle: (title: string) => void;
 };
 
-export default Enterprise;
+const Introduction: FunctionComponent<IntroductionProps> = ({
+  setHeaderTitle,
+}) => {
+  useEffect(() => {
+    setHeaderTitle("Introduction");
+  }, [setHeaderTitle]);
+  return <div>Introduction</div>;
+};
+
+export default Introduction;

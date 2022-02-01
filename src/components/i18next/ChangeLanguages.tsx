@@ -3,7 +3,6 @@ import i18next from "i18next";
 import {
   Box,
   FormControl,
-  InputLabel,
   MenuItem,
   Select,
   SelectChangeEvent,
@@ -31,26 +30,29 @@ function ChangeLanguage() {
   };
 
   return (
-    <FormControl variant="outlined">
-      <InputLabel id="language-select-label" color="primary">
-        {t("language")}
-      </InputLabel>
+    <FormControl variant="standard" sx={{ width: "100%" }}>
       <Select
         labelId="language-select-label"
         id="language-select"
         value={i18next.language}
         onChange={handleOnChange}
-        color="primary"
         label={t("language")}
+        sx={{
+          fontSize: "20px",
+          fontWeiht: "700",
+        }}
       >
         {languages.map(({ code, name, country_code }) => (
-          <MenuItem key={code} color="primary" value={code}>
+          <MenuItem
+            key={code}
+            sx={{ fontSize: "20px", fontWeight: "700" }}
+            value={code}
+          >
             <Box
               className={`flag-icon flag-icon-${country_code} mx-2`}
               mr={1}
               component="span"
             />
-
             {name}
           </MenuItem>
         ))}

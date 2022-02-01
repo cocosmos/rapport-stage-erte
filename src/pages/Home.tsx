@@ -1,7 +1,15 @@
 import { useTranslation } from "react-i18next";
 import logo from "../assets/logo512.png";
+import { FunctionComponent, useEffect } from "react";
 
-const Home = () => {
+type HomeProps = {
+  setHeaderTitle: (title: string) => void;
+};
+
+const Home: FunctionComponent<HomeProps> = ({ setHeaderTitle }) => {
+  useEffect(() => {
+    setHeaderTitle("Home");
+  }, [setHeaderTitle]);
   const { t } = useTranslation();
   return (
     <>
