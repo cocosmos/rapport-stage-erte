@@ -2,5 +2,11 @@
   "app_title": "Mipam Guillot Internship Report",
   "welcome": "Welcome to all",
   "language": "Language",
-  "error": "Error 404"
+  "error": "Error 404",
+  "home": "Home",
+  "introduction": "Introductiohhn",
+  "projects": "Projects",
+  "stats": "Stats",
+  "about": "About",
+  "conclusion": "Conclusion"
 }

@@ -1,3 +1,4 @@
+import i18next from "i18next";
 import { FunctionComponent, useEffect } from "react";
 
 type IntroductionProps = {
@@ -8,7 +9,7 @@ const Introduction: FunctionComponent<IntroductionProps> = ({
   setHeaderTitle,
 }) => {
   useEffect(() => {
-    setHeaderTitle("Introduction");
+    setHeaderTitle(i18next.t("introduction"));
   }, [setHeaderTitle]);
   return <div>Introduction</div>;
 };

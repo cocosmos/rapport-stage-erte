@@ -1,6 +1,8 @@
 import { useTranslation } from "react-i18next";
-import logo from "../assets/logo512.png";
 import { FunctionComponent, useEffect } from "react";
+import i18next from "i18next";
+
+import { Box } from "@mui/material";
 
 type HomeProps = {
   setHeaderTitle: (title: string) => void;
@@ -8,15 +10,22 @@ type HomeProps = {
 
 const Home: FunctionComponent<HomeProps> = ({ setHeaderTitle }) => {
   useEffect(() => {
-    setHeaderTitle("Home");
+    setHeaderTitle(i18next.t("home"));
   }, [setHeaderTitle]);
   const { t } = useTranslation();
   return (
     <>
+      <Box
+        component="form"
+        sx={{
+          "& > :not(style)": { m: 1, width: "25ch" },
+        }}
+        noValidate
+        autoComplete="off"
+      ></Box>
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-
+          {/* https://avatars.dicebear.com/api/avataaars/Mipam%20Guillot.svg?top[]=shortHair&facialHair[]=beardLight&facialHairChance=100&facialHairColor[]=black&clothes[]=blazerAndShirt&clothesColor[]=black&skin[]=pale */}
           {t("welcome")}
         </header>
       </div>

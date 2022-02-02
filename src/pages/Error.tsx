@@ -1,4 +1,5 @@
 import { Stack, Typography } from "@mui/material";
+import i18next from "i18next";
 import { FunctionComponent, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 
@@ -8,7 +9,7 @@ type ErrorProps = {
 
 const Error: FunctionComponent<ErrorProps> = ({ setHeaderTitle }) => {
   useEffect(() => {
-    setHeaderTitle("404 Error");
+    setHeaderTitle(i18next.t("error"));
   }, [setHeaderTitle]);
   const { t } = useTranslation();
   return (

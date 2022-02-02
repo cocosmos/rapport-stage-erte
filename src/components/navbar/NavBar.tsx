@@ -12,6 +12,7 @@ import {
   Avatar,
   MenuItem,
   Button,
+  TextField,
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import { FunctionComponent, useState } from "react";
@@ -24,7 +25,7 @@ import TemporaryNavBarDrawer from "./TemporaryNavBarDrawer";
 import PermanentNavBarDrawer from "./PermanentNavBarDrawer";
 import InfoIcon from "@mui/icons-material/Info";
 import HomeIcon from "@mui/icons-material/Home";
-import logo from "./logo512.png";
+import useLocalStorage from "../../hooks/localStorage";
 
 type menuItem = {
   name: string;
@@ -34,32 +35,32 @@ type menuItem = {
 
 const menuItems: menuItem[] = [
   {
-    name: "Home",
+    name: "home",
     link: "/",
     icon: <HomeIcon color="inherit" fontSize="inherit" />,
   },
   {
-    name: "Introduction",
+    name: "introduction",
     link: "introduction",
     icon: <DescriptionIcon color="inherit" fontSize="inherit" />,
   },
   {
-    name: "Projects",
+    name: "projects",
     link: "projects",
     icon: <ListAltRoundedIcon color="inherit" fontSize="inherit" />,
   },
   {
-    name: "Stats",
+    name: "stats",
     link: "stats",
     icon: <QueryStatsRoundedIcon color="inherit" fontSize="inherit" />,
   },
   {
-    name: "About",
+    name: "about",
     link: "about",
     icon: <InfoIcon color="inherit" fontSize="inherit" />,
   },
   {
-    name: "Conclusion",
+    name: "conclusion",
     link: "conclusion",
     icon: <GavelRoundedIcon color="inherit" fontSize="inherit" />,
   },
@@ -95,6 +96,15 @@ const NavBar: FunctionComponent<NavBarProps> = ({ title, toggleMode }) => {
     setAnchorElUser(null);
   };
 
+  /*Form*/
+  const username = "Mipam Guillot";
+  const [formValues, setFormValues] = useLocalStorage("username", username);
+
+  const handleChange = (e: { target: any }) => {
+    const { value } = e.target;
+    setFormValues(value);
+  };
+
   return (
     <>
       <AppBar
@@ -122,15 +132,26 @@ const NavBar: FunctionComponent<NavBarProps> = ({ title, toggleMode }) => {
           <Typography variant="h6" color="secondary" sx={{ flexGrow: 1 }}>
             {title}
           </Typography>
-          <Typography variant="body2" color="#fff" mr={1}>
-            Mipam Guillot
-          </Typography>
+          <TextField
+            id="standard-basic"
+            variant="standard"
+            value={formValues}
+            onChange={handleChange}
+            sx={{
+              maxWidth: "180px",
+              input: { color: "white" },
+            }}
+          />
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
                 <Avatar
                   alt="Mipam Guillot"
-                  src={logo}
+                  src={
+                    "https://avatars.dicebear.com/api/bottts/" +
+                    formValues +
+                    ".svg"
+                  }
                   sx={{ width: 56, height: 56 }}
                 />
               </IconButton>

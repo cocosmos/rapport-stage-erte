@@ -12,6 +12,7 @@ import { FunctionComponent } from "react";
 import { useNavigate } from "react-router-dom";
 
 import MuiDrawer from "@mui/material/Drawer";
+import i18next from "i18next";
 
 type menuItem = {
   name: string;
@@ -91,8 +92,12 @@ const PermanentNavBarDrawer: FunctionComponent<DrawerProps> = ({
       <List>
         {menuItems.map((element) => {
           return (
-            <ListItem key={element.name} alignItems="flex-start">
-              <Tooltip title={open ? "" : element.name} arrow placement="right">
+            <ListItem key={i18next.t(element.name)} alignItems="flex-start">
+              <Tooltip
+                title={open ? "" : i18next.t(element.name)}
+                arrow
+                placement="right"
+              >
                 <Button
                   onClick={() => handleNavigate(element.link)}
                   variant="contained"
@@ -117,7 +122,7 @@ const PermanentNavBarDrawer: FunctionComponent<DrawerProps> = ({
                   </Typography>
                   {open && (
                     <Typography mr={1} variant="button" color="inherit">
-                      {element.name}
+                      {i18next.t(element.name)}
                     </Typography>
                   )}
                 </Button>

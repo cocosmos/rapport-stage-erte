@@ -13,6 +13,7 @@ import { FunctionComponent } from "react";
 import { useNavigate } from "react-router-dom";
 
 import { ChevronLeft } from "@mui/icons-material";
+import i18next from "i18next";
 
 type menuItem = {
   name: string;
@@ -72,7 +73,7 @@ const TemporaryNavBarDrawer: FunctionComponent<DrawerProps> = ({
       <List>
         {menuItems.map((element) => {
           return (
-            <ListItem key={element.name} alignItems="flex-start">
+            <ListItem key={i18next.t(element.name)} alignItems="flex-start">
               <Button
                 onClick={() => handleNavigate(element.link)}
                 variant="contained"
@@ -92,7 +93,7 @@ const TemporaryNavBarDrawer: FunctionComponent<DrawerProps> = ({
                   {element.icon}
                 </Typography>
                 <Typography mr={1} variant="button" color="inherit">
-                  {element.name}
+                  {i18next.t(element.name)}
                 </Typography>
               </Button>
             </ListItem>

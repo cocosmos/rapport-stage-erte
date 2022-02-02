@@ -1,3 +1,4 @@
+import i18next from "i18next";
 import { FunctionComponent, useEffect } from "react";
 
 type StatsProps = {
@@ -6,7 +7,7 @@ type StatsProps = {
 
 const Stats: FunctionComponent<StatsProps> = ({ setHeaderTitle }) => {
   useEffect(() => {
-    setHeaderTitle("Stats");
+    setHeaderTitle(i18next.t("stats"));
   }, [setHeaderTitle]);
   return <div>Stats</div>;
 };

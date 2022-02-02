@@ -5,14 +5,12 @@ import {
   Box,
   createTheme,
   CssBaseline,
-  PaletteMode,
   responsiveFontSizes,
   ThemeProvider,
 } from "@mui/material";
 import { Route, Routes } from "react-router-dom";
 import NavBar from "./components/navbar/NavBar";
 import Home from "./pages/Home";
-import { grey } from "@mui/material/colors";
 import Introduction from "./pages/Introduction";
 import Projects from "./pages/Projects";
 import About from "./pages/About";
@@ -20,6 +18,7 @@ import Error from "./pages/Error";
 import Conclusion from "./pages/Conclusion";
 import Stats from "./pages/Stats";
 import useLocalStorage from "./hooks/localStorage";
+import getPaletteMode from "./components/getPaletteMode";
 
 declare module "@mui/material/styles" {
   interface Palette {
@@ -36,8 +35,6 @@ declare module "@mui/material/styles" {
 }
 
 const App = () => {
-  //const { t } = useTranslation();
-
   const [headerTitle, setHeaderTitle] = useState<string>("Home");
   const [mode, setMode] = useLocalStorage<"light" | "dark">("theme", "dark");
 
@@ -51,65 +48,6 @@ const App = () => {
     },
     [setHeaderTitle]
   );
-
-  const getPaletteMode = (mode: PaletteMode) => ({
-    palette: {
-      mode: mode,
-      ...(mode === "light"
-        ? {
-            // palette values for light mode
-            divider: "#000",
-            primary: {
-              main: "#fff",
-              contrastText: "#0473fb",
-            },
-            background: {
-              default: "#0473fb",
-              paper: "#0473fb",
-            },
-            mainWindow: {
-              background: "#fff",
-            },
-            text: {
-              primary: "#000",
-            },
-            secondary: {
-              main: "#fff",
-              contrastText: "#000",
-            },
-          }
-        : {
-            // palette values for dark mode
-            common: {
-              white: "#fff",
-              black: "#000",
-            },
-            primary: {
-              main: "#610000",
-              contrastText: "#fff",
-            },
-            secondary: {
-              main: "#fff",
-              contrastText: "#000",
-            },
-            neutral: {
-              main: grey[500],
-              contrastText: "#000b1c",
-            },
-            text: {
-              primary: "#dedede",
-            },
-            divider: grey[600],
-            background: {
-              default: "#172130",
-              paper: "#172130",
-            },
-            mainWindow: {
-              background: "#000b1c",
-            },
-          }),
-    },
-  });
 
   const theme = useMemo(
     () =>
