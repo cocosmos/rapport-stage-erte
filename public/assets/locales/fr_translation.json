@@ -1,12 +1,14 @@
 {
-  "app_title": "Mipam Guillot Internship Report",
-  "welcome": "Welcome to all",
-  "language": "Language",
-  "error": "Error 404",
+  "app_title": "Rapport de stage de Mipam Guillot",
+  "welcome": "Bonjour à tous",
+  "language": "Langue",
+  "error": "Erreur 404",
   "home": "Accueil",
   "introduction": "Introduction",
   "projects": "Projets",
-  "stats": "Stats",
-  "about": "About",
-  "conclusion": "Conclusion"
+  "learned": "Appris",
+  "about": "A propos",
+  "conclusion": "Conclusion",
+
+  "rapport": "Rapport de Stage"
 }

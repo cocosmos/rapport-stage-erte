@@ -4,9 +4,11 @@
   "language": "Language",
   "error": "Error 404",
   "home": "Home",
-  "introduction": "Introductiohhn",
+  "introduction": "Introduction",
   "projects": "Projects",
-  "stats": "Stats",
+  "learned": "Learned",
   "about": "About",
-  "conclusion": "Conclusion"
+  "conclusion": "Conclusion",
+
+  "rapport": "Internship Report"
 }

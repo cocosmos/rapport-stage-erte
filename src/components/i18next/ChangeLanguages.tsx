@@ -39,14 +39,16 @@ function ChangeLanguage() {
         label={t("language")}
         sx={{
           color: "#fff",
-          fontSize: "20px",
           fontWeiht: "700",
         }}
       >
         {languages.map(({ code, name, country_code }) => (
           <MenuItem
             key={code}
-            sx={{ fontSize: "20px", fontWeight: "700", color: "#fff" }}
+            sx={{
+              fontWeight: "700",
+              color: "#fff",
+            }}
             value={code}
           >
             <Box

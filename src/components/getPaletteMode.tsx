@@ -9,25 +9,25 @@ const getPaletteMode = (mode: PaletteMode) => ({
           // palette values for light mode
           divider: "#000",
           primary: {
-            main: "#fff",
-            contrastText: "#0473fb",
+            main: "#0473fb",
+            contrastText: "#fff",
           },
           background: {
-            default: "#0473fb",
-            paper: "#0473fb",
+            default: "#4663ac",
+            paper: "#4663ac",
           },
           mainWindow: {
-            background: "#fff",
+            background: "#c1d8f0",
           },
           text: {
-            primary: "#000",
-          },
-          text2: {
             primary: "#fff",
           },
+          text2: {
+            primary: "#0473fb",
+          },
           secondary: {
-            main: "#fff",
-            contrastText: "#fff",
+            main: "#0473fb",
+            contrastText: "#0473fb",
           },
         }
       : {
@@ -42,7 +42,7 @@ const getPaletteMode = (mode: PaletteMode) => ({
           },
           secondary: {
             main: "#fff",
-            contrastText: "#000",
+            contrastText: "#610000",
           },
           neutral: {
             main: grey[500],

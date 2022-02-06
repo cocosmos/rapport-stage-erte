@@ -37,32 +37,32 @@ const menuItems: menuItem[] = [
   {
     name: "home",
     link: "/",
-    icon: <HomeIcon color="inherit" fontSize="inherit" />,
+    icon: <HomeIcon color="inherit" fontSize="medium" />,
   },
   {
     name: "introduction",
     link: "introduction",
-    icon: <DescriptionIcon color="inherit" fontSize="inherit" />,
+    icon: <DescriptionIcon color="inherit" fontSize="medium" />,
   },
   {
     name: "projects",
     link: "projects",
-    icon: <ListAltRoundedIcon color="inherit" fontSize="inherit" />,
+    icon: <ListAltRoundedIcon color="inherit" fontSize="medium" />,
   },
   {
-    name: "stats",
-    link: "stats",
-    icon: <QueryStatsRoundedIcon color="inherit" fontSize="inherit" />,
-  },
-  {
-    name: "about",
-    link: "about",
-    icon: <InfoIcon color="inherit" fontSize="inherit" />,
+    name: "learned",
+    link: "learned",
+    icon: <QueryStatsRoundedIcon color="inherit" fontSize="medium" />,
   },
   {
     name: "conclusion",
     link: "conclusion",
-    icon: <GavelRoundedIcon color="inherit" fontSize="inherit" />,
+    icon: <GavelRoundedIcon color="inherit" fontSize="medium" />,
+  },
+  {
+    name: "about",
+    link: "about",
+    icon: <InfoIcon color="inherit" fontSize="medium" />,
   },
 ];
 
@@ -97,12 +97,12 @@ const NavBar: FunctionComponent<NavBarProps> = ({ title, toggleMode }) => {
   };
 
   /*Form*/
-  const username = "Mipam Guillot";
-  const [formValues, setFormValues] = useLocalStorage("username", username);
+
+  const [username, setUsername] = useLocalStorage("username", "Mipam Guillot");
 
   const handleChange = (e: { target: any }) => {
     const { value } = e.target;
-    setFormValues(value);
+    setUsername(value);
   };
 
   return (
@@ -119,37 +119,38 @@ const NavBar: FunctionComponent<NavBarProps> = ({ title, toggleMode }) => {
           backgroundImage: "none",
           backgroundColor: theme.palette.background.default,
           maxHeight: "6vh",
+          minHeight: "65px",
         }}
       >
         <Toolbar>
           <IconButton
-            color="secondary"
             aria-label="Open Navigation"
             onClick={toggleDrawer}
+            sx={{ color: "white" }}
           >
             <MenuIcon />
           </IconButton>
-          <Typography variant="h6" color="secondary" sx={{ flexGrow: 1 }}>
+          <Typography variant="h4" sx={{ flexGrow: 1, color: "white" }}>
             {title}
           </Typography>
           <TextField
             id="standard-basic"
             variant="standard"
-            value={formValues}
+            value={username}
             onChange={handleChange}
             sx={{
-              maxWidth: "180px",
-              input: { color: "white" },
+              maxWidth: "150px",
+              input: { color: "white", fontSize: "20px" },
             }}
           />
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
                 <Avatar
-                  alt="Mipam Guillot"
+                  alt={username}
                   src={
                     "https://avatars.dicebear.com/api/bottts/" +
-                    formValues +
+                    username +
                     ".svg"
                   }
                   sx={{ width: 56, height: 56 }}

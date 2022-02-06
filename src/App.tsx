@@ -16,9 +16,9 @@ import Projects from "./pages/Projects";
 import About from "./pages/About";
 import Error from "./pages/Error";
 import Conclusion from "./pages/Conclusion";
-import Stats from "./pages/Stats";
 import useLocalStorage from "./hooks/localStorage";
 import getPaletteMode from "./components/getPaletteMode";
+import Learned from "./pages/Learned";
 
 declare module "@mui/material/styles" {
   interface Palette {
@@ -37,7 +37,7 @@ declare module "@mui/material/styles" {
 const App = () => {
   const [headerTitle, setHeaderTitle] = useState<string>("Home");
   const [mode, setMode] = useLocalStorage<"light" | "dark">("theme", "dark");
-
+  // const [handleChange, setHandleChange] = useLocalStorage("username", null);
   const handleChangeMode = () => {
     setMode(mode === "light" ? "dark" : "light");
   };
@@ -56,6 +56,35 @@ const App = () => {
           typography: {
             fontFamily: ["'Orbitron', 'sans-serif'"].join(","),
             fontSize: 22,
+            h1: {
+              letterSpacing: 0,
+              fontSize: 80,
+            },
+            h2: {
+              fontSize: 60,
+            },
+            h3: {
+              fontSize: 42,
+            },
+            h4: {
+              fontSize: 30,
+            },
+            h5: {
+              fontSize: 20,
+            },
+            h6: {
+              fontSize: 18,
+            },
+            subtitle1: {
+              fontSize: 18,
+            },
+            body1: {
+              fontSize: 26,
+              fontFamily: ["'Montserrat', 'sans-serif'"].join(","),
+            },
+            body2: {
+              fontSize: 30,
+            },
           },
           breakpoints: {
             keys: ["xs", "sm", "md", "lg", "xl"],
@@ -103,8 +132,8 @@ const App = () => {
               element={<About setHeaderTitle={handleTitleChange} />}
             />
             <Route
-              path="stats"
-              element={<Stats setHeaderTitle={handleTitleChange} />}
+              path="Learned"
+              element={<Learned setHeaderTitle={handleTitleChange} />}
             />
             <Route
               path="conclusion"
