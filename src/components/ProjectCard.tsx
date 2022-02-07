@@ -1,10 +1,4 @@
-import * as React from "react";
 import Button from "@mui/material/Button";
-import Dialog, { DialogProps } from "@mui/material/Dialog";
-import DialogActions from "@mui/material/DialogActions";
-import DialogContent from "@mui/material/DialogContent";
-import DialogContentText from "@mui/material/DialogContentText";
-import DialogTitle from "@mui/material/DialogTitle";
 import LogoErte from "../assets/logo/erte.png";
 import LogoMusicorner from "../assets/logo/mcc.png";
 import LogoDynaflow from "../assets/logo/dynaflow.png";
@@ -14,6 +8,7 @@ import LogoDvh from "../assets/logo/dvh.png";
 import LogoDvss from "../assets/logo/dvss.png";
 import LogoDvc from "../assets/logo/dvc.png";
 import ImageErte from "../assets/projects/erte-site.png";
+import OpenInBrowserIcon from "@mui/icons-material/OpenInBrowser";
 
 import {
   Card,
@@ -21,12 +16,15 @@ import {
   CardContent,
   CardMedia,
   Grid,
+  IconButton,
   Typography,
 } from "@mui/material";
 
 type cardItem = {
+  id: number;
   logo: string;
   name: string;
+  route: string;
   smallText: string;
   link: string;
   longText: string;
@@ -35,8 +33,10 @@ type cardItem = {
 
 const cardItems: cardItem[] = [
   {
+    id: 1,
     logo: LogoErte,
     name: "Erte",
+    route: "projects/erte",
     smallText:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio error voluptatibus tempore magnam illum aut beatae vero eius.",
     link: "https://www.erte.ch/",
@@ -45,105 +45,117 @@ const cardItems: cardItem[] = [
     imageSite: ImageErte,
   },
   {
+    id: 2,
     logo: LogoMusicorner,
     name: "Musicorner",
+    route: "projects/musicorner",
+
     smallText:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio error voluptatibus tempore magnam illum aut beatae vero eius.",
-    link: "https://www.erte.ch/",
+    link: "https://musicorner.ch/",
     longText:
       "loremfdjsanfndasfndasjk nfads fdasjkf kdjsf dsakjnfkjadsf kjdsafn dasjkfn asdjnf kjdasfnadsjk fndsjkaf dasjnf dasjfn dasjf dasjkfndsa ",
-    imageSite: ImageErte,
+    imageSite: "",
   },
   {
+    id: 3,
     logo: LogoBCC,
     name: "Business Center Carouge",
+    route: "projects/bcc",
+
     smallText:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio error voluptatibus tempore magnam illum aut beatae vero eius.",
-    link: "https://www.erte.ch/",
+    link: "https://bcc-urbanstudios.com/",
     longText:
       "loremfdjsanfndasfndasjk nfads fdasjkf kdjsf dsakjnfkjadsf kjdsafn dasjkfn asdjnf kjdasfnadsjk fndsjkaf dasjnf dasjfn dasjf dasjkfndsa ",
-    imageSite: ImageErte,
+    imageSite: "",
   },
   {
+    id: 4,
     logo: LogoDynaflow,
     name: "Dynaflow",
+    route: "projects/dynaflow",
+
     smallText:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio error voluptatibus tempore magnam illum aut beatae vero eius.",
-    link: "https://www.erte.ch/",
+    link: "https://dynaflow.ch/",
     longText:
       "loremfdjsanfndasfndasjk nfads fdasjkf kdjsf dsakjnfkjadsf kjdsafn dasjkfn asdjnf kjdasfnadsjk fndsjkaf dasjnf dasjfn dasjf dasjkfndsa ",
-    imageSite: ImageErte,
+    imageSite: "",
   },
   {
+    id: 5,
     logo: LogoDvs,
     name: "Déjà Vu Switzerland",
+    route: "projects/dvs",
+
     smallText:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio error voluptatibus tempore magnam illum aut beatae vero eius.",
-    link: "https://www.erte.ch/",
+    link: "https://deja-vu-switzerland.ch/",
     longText:
       "loremfdjsanfndasfndasjk nfads fdasjkf kdjsf dsakjnfkjadsf kjdsafn dasjkfn asdjnf kjdasfnadsjk fndsjkaf dasjnf dasjfn dasjf dasjkfndsa ",
-    imageSite: ImageErte,
+    imageSite: "",
   },
   {
+    id: 6,
     logo: LogoDvh,
     name: "Déjà Vu Home",
+    route: "projects/dvh",
+
     smallText:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio error voluptatibus tempore magnam illum aut beatae vero eius.",
-    link: "https://www.erte.ch/",
+    link: "https://deja-vu-home.ch/",
     longText:
       "loremfdjsanfndasfndasjk nfads fdasjkf kdjsf dsakjnfkjadsf kjdsafn dasjkfn asdjnf kjdasfnadsjk fndsjkaf dasjnf dasjfn dasjf dasjkfndsa ",
-    imageSite: ImageErte,
+    imageSite: "",
   },
   {
+    id: 7,
     logo: LogoDvc,
-    name: "Déjà Vu Collection / Art",
+    name: "Art Déjà Vu Collection",
+    route: "projects/advc",
+
     smallText:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio error voluptatibus tempore magnam illum aut beatae vero eius.",
-    link: "https://www.erte.ch/",
+    link: "https://art.deja-vu-collection.com/",
     longText:
       "loremfdjsanfndasfndasjk nfads fdasjkf kdjsf dsakjnfkjadsf kjdsafn dasjkfn asdjnf kjdasfnadsjk fndsjkaf dasjnf dasjfn dasjf dasjkfndsa ",
-    imageSite: ImageErte,
+    imageSite: "",
   },
   {
+    id: 8,
+    logo: LogoDvc,
+    name: "Déjà Vu Collection",
+    route: "projects/dvc",
+
+    smallText:
+      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio error voluptatibus tempore magnam illum aut beatae vero eius.",
+    link: "https://deja-vu-collection.ch/",
+    longText:
+      "loremfdjsanfndasfndasjk nfads fdasjkf kdjsf dsakjnfkjadsf kjdsafn dasjkfn asdjnf kjdasfnadsjk fndsjkaf dasjnf dasjfn dasjf dasjkfndsa ",
+    imageSite: "",
+  },
+  {
+    id: 9,
     logo: LogoDvss,
     name: "Déjà Vu Services",
+    route: "projects/dvss",
+
     smallText:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio error voluptatibus tempore magnam illum aut beatae vero eius.",
-    link: "https://www.erte.ch/",
+    link: "https://deja-vu-services.ch/",
     longText:
       "loremfdjsanfndasfndasjk nfads fdasjkf kdjsf dsakjnfkjadsf kjdsafn dasjkfn asdjnf kjdasfnadsjk fndsjkaf dasjnf dasjfn dasjf dasjkfndsa ",
-    imageSite: ImageErte,
+    imageSite: "",
   },
 ];
 
 function ScrollDialog() {
-  const [open, setOpen] = React.useState(false);
-  const [scroll, setScroll] = React.useState<DialogProps["scroll"]>("paper");
-
-  const handleClickOpen = (scrollType: DialogProps["scroll"]) => () => {
-    setOpen(true);
-    setScroll(scrollType);
-  };
-
-  const handleClose = () => {
-    setOpen(false);
-  };
-
-  const descriptionElementRef = React.useRef<HTMLElement>(null);
-  React.useEffect(() => {
-    if (open) {
-      const { current: descriptionElement } = descriptionElementRef;
-      if (descriptionElement !== null) {
-        descriptionElement.focus();
-      }
-    }
-  }, [open]);
-
   return (
     <Grid container spacing={3} p={3}>
       {cardItems.map((element) => {
         return (
-          <Grid item xs={12} lg={6} xl={4} key={element.name}>
+          <Grid item xs={12} lg={6} xl={4} key={element.id}>
             <Card
               sx={{
                 /* maxWidth: 800 */
@@ -160,56 +172,22 @@ function ScrollDialog() {
                 <Typography gutterBottom variant="h3" component="div">
                   {element.name}
                 </Typography>
-                <Typography variant="body1">
-                  Lizards are a widespread group of squamate reptiles, with over
-                  6,000 species, ranging across all continents except Antarctica
-                </Typography>
+                <Typography variant="body1"> {element.smallText}</Typography>
               </CardContent>
               <CardActions sx={{ justifyContent: "flex-end" }}>
-                <Button
-                  variant="outlined"
-                  color="secondary"
-                  href="https://www.erte.ch/"
+                <IconButton
+                  href={element.link}
                   target="_blank"
-                  sx={{ mr: 2 }}
+                  sx={{ mr: 2, color: "#fff" }}
                 >
-                  Voir le site
-                </Button>
-                <Button onClick={handleClickOpen("paper")} variant="contained">
+                  <OpenInBrowserIcon />
+                </IconButton>
+
+                <Button variant="contained" href={element.route}>
                   En savoir plus
                 </Button>
               </CardActions>
             </Card>
-            <Dialog
-              fullWidth={true}
-              maxWidth={"xl"}
-              open={open}
-              onClose={handleClose}
-              scroll={scroll}
-              aria-labelledby="scroll-dialog-title"
-              aria-describedby="scroll-dialog-description"
-            >
-              <DialogTitle id="scroll-dialog-title">Dynaflow</DialogTitle>
-              <DialogContent dividers={scroll === "paper"}>
-                <DialogContentText
-                  id="scroll-dialog-description"
-                  ref={descriptionElementRef}
-                  tabIndex={-1}
-                >
-                  <Typography variant="body1" color="text">
-                    Lizards are a widespread group of squamate reptiles, with
-                    over 6,000 species, ranging across all continents except
-                    Antarctica
-                  </Typography>
-                  <img src={ImageErte} alt="" width={"100%"} />
-                </DialogContentText>
-              </DialogContent>
-              <DialogActions>
-                <Button onClick={handleClose} variant="contained">
-                  Fermer
-                </Button>
-              </DialogActions>
-            </Dialog>
           </Grid>
         );
       })}
