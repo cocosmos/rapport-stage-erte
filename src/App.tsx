@@ -19,7 +19,8 @@ import Conclusion from "./pages/Conclusion";
 import useLocalStorage from "./hooks/localStorage";
 import getPaletteMode from "./components/getPaletteMode";
 import Learned from "./pages/Learned";
-import Erte from "./pages/projects/Erte";
+
+import ProjectsTemplate from "./components/ProjectsTemplate";
 
 declare module "@mui/material/styles" {
   interface Palette {
@@ -102,6 +103,7 @@ const App = () => {
       ),
     [mode]
   );
+
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
@@ -124,10 +126,14 @@ const App = () => {
               path="introduction"
               element={<Introduction setHeaderTitle={handleTitleChange} />}
             />
-            <Route path="projects/erte" element={<Erte />} />
+
             <Route
               path="projects"
               element={<Projects setHeaderTitle={handleTitleChange} />}
+            />
+            <Route
+              path="projects/:projectsId"
+              element={<ProjectsTemplate setHeaderTitle={handleTitleChange} />}
             />
             <Route
               path="about"
