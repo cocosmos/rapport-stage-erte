@@ -49,7 +49,7 @@ const cardItems: cardItem[] = [
     name: "Musicorner",
     smallText:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio error voluptatibus tempore magnam illum aut beatae vero eius.",
-    link: "https://www.erte.ch/",
+    link: "https://www.musicorner.ch/",
     longText:
       "loremfdjsanfndasfndasjk nfads fdasjkf kdjsf dsakjnfkjadsf kjdsafn dasjkfn asdjnf kjdasfnadsjk fndsjkaf dasjnf dasjfn dasjf dasjkfndsa ",
     imageSite: ImageErte,
@@ -59,7 +59,7 @@ const cardItems: cardItem[] = [
     name: "Business Center Carouge",
     smallText:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio error voluptatibus tempore magnam illum aut beatae vero eius.",
-    link: "https://www.erte.ch/",
+    link: "https://www.bcc-urbanstudios.com/",
     longText:
       "loremfdjsanfndasfndasjk nfads fdasjkf kdjsf dsakjnfkjadsf kjdsafn dasjkfn asdjnf kjdasfnadsjk fndsjkaf dasjnf dasjfn dasjf dasjkfndsa ",
     imageSite: ImageErte,
@@ -69,7 +69,7 @@ const cardItems: cardItem[] = [
     name: "Dynaflow",
     smallText:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio error voluptatibus tempore magnam illum aut beatae vero eius.",
-    link: "https://www.erte.ch/",
+    link: "https://www.dynaflow.ch/",
     longText:
       "loremfdjsanfndasfndasjk nfads fdasjkf kdjsf dsakjnfkjadsf kjdsafn dasjkfn asdjnf kjdasfnadsjk fndsjkaf dasjnf dasjfn dasjf dasjkfndsa ",
     imageSite: ImageErte,
@@ -79,7 +79,7 @@ const cardItems: cardItem[] = [
     name: "Déjà Vu Switzerland",
     smallText:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio error voluptatibus tempore magnam illum aut beatae vero eius.",
-    link: "https://www.erte.ch/",
+    link: "https://deja-vu-switzerland.ch/",
     longText:
       "loremfdjsanfndasfndasjk nfads fdasjkf kdjsf dsakjnfkjadsf kjdsafn dasjkfn asdjnf kjdasfnadsjk fndsjkaf dasjnf dasjfn dasjf dasjkfndsa ",
     imageSite: ImageErte,
@@ -89,17 +89,17 @@ const cardItems: cardItem[] = [
     name: "Déjà Vu Home",
     smallText:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio error voluptatibus tempore magnam illum aut beatae vero eius.",
-    link: "https://www.erte.ch/",
+    link: "https://deja-vu-home.ch/",
     longText:
       "loremfdjsanfndasfndasjk nfads fdasjkf kdjsf dsakjnfkjadsf kjdsafn dasjkfn asdjnf kjdasfnadsjk fndsjkaf dasjnf dasjfn dasjf dasjkfndsa ",
     imageSite: ImageErte,
   },
   {
     logo: LogoDvc,
-    name: "Déjà Vu Collection / Art",
+    name: "Art Déjà Vu Collection",
     smallText:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio error voluptatibus tempore magnam illum aut beatae vero eius.",
-    link: "https://www.erte.ch/",
+    link: "https://art.deja-vu-collection.com/",
     longText:
       "loremfdjsanfndasfndasjk nfads fdasjkf kdjsf dsakjnfkjadsf kjdsafn dasjkfn asdjnf kjdasfnadsjk fndsjkaf dasjnf dasjfn dasjf dasjkfndsa ",
     imageSite: ImageErte,
@@ -109,7 +109,7 @@ const cardItems: cardItem[] = [
     name: "Déjà Vu Services",
     smallText:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio error voluptatibus tempore magnam illum aut beatae vero eius.",
-    link: "https://www.erte.ch/",
+    link: "https://deja-vu-services.ch/",
     longText:
       "loremfdjsanfndasfndasjk nfads fdasjkf kdjsf dsakjnfkjadsf kjdsafn dasjkfn asdjnf kjdasfnadsjk fndsjkaf dasjnf dasjfn dasjf dasjkfndsa ",
     imageSite: ImageErte,
@@ -161,8 +161,7 @@ function ScrollDialog() {
                   {element.name}
                 </Typography>
                 <Typography variant="body1">
-                  Lizards are a widespread group of squamate reptiles, with over
-                  6,000 species, ranging across all continents except Antarctica
+                {element.smallText}
                 </Typography>
               </CardContent>
               <CardActions sx={{ justifyContent: "flex-end" }}>
@@ -189,7 +188,7 @@ function ScrollDialog() {
               aria-labelledby="scroll-dialog-title"
               aria-describedby="scroll-dialog-description"
             >
-              <DialogTitle id="scroll-dialog-title">Dynaflow</DialogTitle>
+              <DialogTitle id="scroll-dialog-title">{element.name}</DialogTitle>
               <DialogContent dividers={scroll === "paper"}>
                 <DialogContentText
                   id="scroll-dialog-description"
@@ -197,11 +196,10 @@ function ScrollDialog() {
                   tabIndex={-1}
                 >
                   <Typography variant="body1" color="text">
-                    Lizards are a widespread group of squamate reptiles, with
-                    over 6,000 species, ranging across all continents except
-                    Antarctica
+                   {element.longText}
                   </Typography>
-                  <img src={ImageErte} alt="" width={"100%"} />
+                  <img src={ImageErte} alt="" width={"100%"} />                                                                                  
+                  <iframe src={element.link} title={element.name} frameBorder="0" width="100%" height="800"></iframe>
                 </DialogContentText>
               </DialogContent>
               <DialogActions>
