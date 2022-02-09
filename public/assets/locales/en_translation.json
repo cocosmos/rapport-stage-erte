@@ -16,5 +16,7 @@
   "and_with_mui": "And Mui",
   "translated": "Website translated in <0>{lang}</0> languages by <0>Deepl API</0>.",
   "mode": "<0>1</0> Dark mode and <0>1</0> Light mode",
-  "madeby": "Made by <0>Mipam Guillot</0>"
+  "madeby": "Made by <0>Mipam Guillot</0>",
+  "lastCommits": "Last commits :",
+  "lastCommitsBy": "Last commits by <0>Github API</0>"
 }
