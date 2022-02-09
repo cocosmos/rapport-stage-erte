@@ -1,9 +1,11 @@
-import { Grid, Typography } from "@mui/material";
+import { Divider, Grid, Typography } from "@mui/material";
 import i18next from "i18next";
 import { FunctionComponent, useEffect } from "react";
 import { Trans, useTranslation } from "react-i18next";
 import reactLogo from "../assets/react.svg";
 import muiLogo from "../assets/mui.png";
+import tsLogo from "../assets/typescript.png";
+
 import LastCommits from "../components/LastCommits";
 
 type AboutProps = {
@@ -24,19 +26,31 @@ const About: FunctionComponent<AboutProps> = ({ setHeaderTitle }) => {
           {t("about_this_site")}
         </Typography>
       </Grid>
+      <Grid item xs={12}>
+        <Typography variant="h3" color="secondary">
+          {t("made_with")}
+        </Typography>
+      </Grid>
       <Grid item xs={12} xl={2}>
         <Typography variant="body1" color="secondary">
-          {t("made_with_react")}
+          React
         </Typography>
         <img src={reactLogo} alt="logo React" width={80} />
       </Grid>
       <Grid item xs={12} xl={2}>
         <Typography variant="body1" color="secondary">
-          {t("and_with_mui")}
+          MUI
         </Typography>
         <img src={muiLogo} alt="logo React" width={80} />
       </Grid>
-      <Grid item xs={12}>
+      <Grid item xs={12} xl={2}>
+        <Typography variant="body1" color="secondary">
+          Typescript
+        </Typography>
+        <img src={tsLogo} alt="logo typescript" width={70} />
+      </Grid>
+      <Divider />
+      <Grid item xs={11}>
         <Typography className="specialNumber" variant="body1" color="secondary">
           <Trans
             i18nKey="translated"
@@ -45,12 +59,12 @@ const About: FunctionComponent<AboutProps> = ({ setHeaderTitle }) => {
           />
         </Typography>
       </Grid>
-      <Grid item xs={12}>
+      <Grid item xs={11}>
         <Typography className="specialNumber" variant="body1" color="secondary">
           <Trans i18nKey="mode" components={[<strong>dummyChild</strong>]} />
         </Typography>
       </Grid>
-      <Grid item xs={12}>
+      <Grid item xs={11}>
         <Typography className="specialNumber" variant="body1" color="secondary">
           <Trans
             i18nKey="lastCommitsBy"
@@ -63,7 +77,7 @@ const About: FunctionComponent<AboutProps> = ({ setHeaderTitle }) => {
           <Trans i18nKey="madeby" components={[<strong>dummyChild</strong>]} />
         </Typography>
       </Grid>
-      <Grid item xs={12} mt={15}>
+      <Grid item xs={10} mt={15}>
         <Typography variant="h3" color="secondary">
           {t("lastCommits")}
         </Typography>
