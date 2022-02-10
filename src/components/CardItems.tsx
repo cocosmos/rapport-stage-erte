@@ -11,45 +11,33 @@ type cardItem = {
   id: string;
   logo: string;
   name: string;
-  smallText: string;
   link: string;
-  longText: string;
-  imageSite: string;
+  number: number;
 };
 export const cardItems: cardItem[] = [
   {
     id: "erte",
     logo: LogoErte,
     name: "Erte",
-    smallText:"test",
     link: "https://www.erte.ch/",
-    longText:"",
-    imageSite: "",
+
+    number: 0,
   },
   {
     id: "musicorner",
     logo: LogoMusicorner,
-
     name: "Musicorner",
-
-    smallText:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio error voluptatibus tempore magnam illum aut beatae vero eius.",
     link: "https://musicorner.ch/",
-    longText:"",
-    imageSite: "",
+
+    number: 1,
   },
   {
     id: "bcc",
     logo: LogoBCC,
-
     name: "Business Center Carouge",
-
-    smallText:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio error voluptatibus tempore magnam illum aut beatae vero eius.",
     link: "https://bcc-urbanstudios.com/",
-    longText:"",
 
-    imageSite: "",
+    number: 2,
   },
   {
     id: "dynaflow",
@@ -57,47 +45,35 @@ export const cardItems: cardItem[] = [
 
     name: "Dynaflow",
 
-    smallText:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio error voluptatibus tempore magnam illum aut beatae vero eius.",
     link: "https://dynaflow.ch/",
-    longText:"",
 
-    imageSite: "",
+    number: 3,
   },
   {
     id: "deja-vu-switzerland",
     logo: LogoDvs,
 
     name: "Déjà Vu Switzerland",
-    smallText:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio error voluptatibus tempore magnam illum aut beatae vero eius.",
+
     link: "https://deja-vu-switzerland.ch/",
-    longText:"",
-    imageSite: "",
+
+    number: 4,
   },
   {
     id: "deja-vu-home",
     logo: LogoDvh,
-
     name: "Déjà Vu Home",
-
-    smallText:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio error voluptatibus tempore magnam illum aut beatae vero eius.",
     link: "https://deja-vu-home.ch/",
-    longText:"",
-    imageSite: "",
+
+    number: 5,
   },
   {
     id: "art-deja-vu-collection",
     logo: LogoDvc,
-
     name: "Art Déjà Vu Collection",
-
-    smallText:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio error voluptatibus tempore magnam illum aut beatae vero eius.",
     link: "https://art.deja-vu-collection.com/",
-    longText: "",
-    imageSite: "",
+
+    number: 6,
   },
   {
     id: "deja-vu-collection",
@@ -105,11 +81,9 @@ export const cardItems: cardItem[] = [
 
     name: "Déjà Vu Collection",
 
-    smallText:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio error voluptatibus tempore magnam illum aut beatae vero eius.",
     link: "https://deja-vu-collection.ch/",
-    longText:"",
-    imageSite: "",
+
+    number: 7,
   },
   {
     id: "deja-vu-services",
@@ -117,10 +91,8 @@ export const cardItems: cardItem[] = [
 
     name: "Déjà Vu Services",
 
-    smallText:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio error voluptatibus tempore magnam illum aut beatae vero eius.",
     link: "https://deja-vu-services.ch/",
-    longText:"",
-    imageSite: "",
+
+    number: 8,
   },
 ];

@@ -17,5 +17,60 @@
   "mode": "<0>1</0> Dark mode and <0>1</0> Light mode",
   "madeby": "Made by <0>Mipam Guillot</0>",
   "lastCommits": "Last commits :",
-  "lastCommitsBy": "Last commits by <0>Github API</0>"
+  "lastCommitsBy": "Last commits by <0>Github API</0>",
+  "lists1Objects": [
+    { "list": "tom" },
+    { "list": "steve" },
+    { "list": "jack" },
+    { "list": "barn" },
+    { "list": "willie" },
+    { "list": "willie" },
+    { "list": "willie" },
+    { "list": "willie" },
+    { "list": "willie" }
+  ],
+  "lists2Objects": [
+    { "list": "tom" },
+    { "list": "steve" },
+    { "list": "jack" },
+    { "list": "barn" },
+    { "list": "willie" },
+    { "list": "willie" },
+    { "list": "willie" },
+    { "list": "willie" },
+    { "list": "willie" }
+  ],
+  "lists3Objects": [
+    { "list": "tom" },
+    { "list": "steve" },
+    { "list": "jack" },
+    { "list": "barn" },
+    { "list": "willie" },
+    { "list": "willie" },
+    { "list": "willie" },
+    { "list": "willie" },
+    { "list": "willie" }
+  ],
+  "lists4Objects": [
+    { "list": "tom" },
+    { "list": "steve" },
+    { "list": "jack" },
+    { "list": "barn" },
+    { "list": "willie" },
+    { "list": "willie" },
+    { "list": "willie" },
+    { "list": "willie" },
+    { "list": "willie" }
+  ],
+  "lists5Objects": [
+    { "list": "tom" },
+    { "list": "steve" },
+    { "list": "jack" },
+    { "list": "barn" },
+    { "list": "willie" },
+    { "list": "willie" },
+    { "list": "willie" },
+    { "list": "willie" },
+    { "list": "willie" }
+  ]
 }

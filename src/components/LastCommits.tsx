@@ -1,20 +1,13 @@
 import React, { Fragment, useEffect, useState } from "react";
 import axios from "axios";
 import { grey } from "@mui/material/colors";
-import {
-  Divider,
-  Grid,
-  List,
-  ListItem,
-  ListItemText,
-  Typography,
-} from "@mui/material";
+import { List, ListItem, ListItemText, Typography } from "@mui/material";
 
 const LastCommits = () => {
   const [commitsData, setcommitsData] = useState<any[]>([]);
   useEffect(() => {
     axios
-      .get("https://api.github.com/repos/cocosmos/mipam_movies/commits")
+      .get("https://api.github.com/repos/cocosmos/rapport-stage-erte/commits")
       .then((res) => setcommitsData(res.data));
   }, []);
 

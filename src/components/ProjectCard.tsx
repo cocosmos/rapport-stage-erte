@@ -8,9 +8,15 @@ import {
   CardMedia,
   Grid,
   IconButton,
+  List,
+  ListItem,
+  ListItemIcon,
+  ListItemText,
   Typography,
 } from "@mui/material";
 import { cardItems } from "./CardItems";
+import BugReportIcon from "@mui/icons-material/BugReport";
+import i18next from "i18next";
 
 function ProjectCard() {
   return (
@@ -21,7 +27,7 @@ function ProjectCard() {
             <Card
               sx={{
                 /* maxWidth: 800 */
-                minHeight: "500px",
+                minHeight: "550px",
               }}
             >
               <CardMedia
@@ -34,7 +40,26 @@ function ProjectCard() {
                 <Typography gutterBottom variant="h3" component="div">
                   {element.name}
                 </Typography>
-                <Typography variant="body1"> {element.smallText}</Typography>
+                <List>
+                  <ListItem disablePadding>
+                    <ListItemIcon>
+                      <BugReportIcon />
+                    </ListItemIcon>
+                    <ListItemText
+                      primary={i18next.t(
+                        `lists1Objects.${element.number}.list`
+                      )}
+                    />
+                  </ListItem>
+                  <ListItem disablePadding>
+                    <ListItemIcon></ListItemIcon>
+                    <ListItemText
+                      primary={i18next.t(
+                        `lists2Objects.${element.number}.list`
+                      )}
+                    />
+                  </ListItem>
+                </List>
               </CardContent>
               <CardActions sx={{ justifyContent: "flex-end" }}>
                 <IconButton
