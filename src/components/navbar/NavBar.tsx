@@ -49,11 +49,11 @@ const menuItems: menuItem[] = [
     link: "projects",
     icon: <ListAltRoundedIcon color="inherit" fontSize="medium" />,
   },
-  {
-    name: "learned",
-    link: "learned",
-    icon: <QueryStatsRoundedIcon color="inherit" fontSize="medium" />,
-  },
+  // {
+  //   name: "learned",
+  //   link: "learned",
+  //   icon: <QueryStatsRoundedIcon color="inherit" fontSize="medium" />,
+  // },
   {
     name: "conclusion",
     link: "conclusion",

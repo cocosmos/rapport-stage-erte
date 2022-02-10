@@ -1,0 +1,47 @@
+erte :
+création de page
+modification du thème
+création d'extension
+modification du contenu
+refonte du site (bonne pratique)
+résolution de bug
+
+
+musicorner:
+implémentation de woocommerce et template produits
+modification d'extension
+création de page
+modification du thème
+refonte du site (bonne pratique)
+résolution de bug
+
+bcc:
+création du site sur base de celui de WIX
+personnalisation du thème
+celui que j'ai le plus apprécié faire
+le plus optimisé
+
+Si je devais refaire je préfèrerais recommencer.
+
+dynaflow: 
+création de template pour chaque vidéos
+modification du thème
+refonte du site (bonne pratique)
+ajouts de fonctionnalités
+résolution de bug
+
+
+deja vu s:
+résolution de bug : exemple bouton
+modification du thème
+rendre le thème responsive
+
+
+deja vu s:
+résolution de bug : exemple bouton
+modification du thème
+rendre le thème responsive
+deja vu s:
+résolution de bug : exemple bouton
+modification du thème
+rendre le thème responsive

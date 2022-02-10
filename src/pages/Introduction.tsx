@@ -30,6 +30,7 @@ const Introduction: FunctionComponent<IntroductionProps> = ({
       justifyContent={"center"}
     >
       <Grid item xs={12} justifyContent={"center"}>
+      <canvas className="background"></canvas>
         <Card sx={{ maxWidth: 150 }}>
           <CardMedia
             component="img"

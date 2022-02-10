@@ -140,7 +140,7 @@ const App = () => {
               element={<About setHeaderTitle={handleTitleChange} />}
             />
             <Route
-              path="Learned"
+            path="Learned"
               element={<Learned setHeaderTitle={handleTitleChange} />}
             />
             <Route

@@ -1,4 +1,4 @@
-import { Divider, Grid, Typography } from "@mui/material";
+import { Button, Divider, Grid, Typography } from "@mui/material";
 import i18next from "i18next";
 import { FunctionComponent, useEffect } from "react";
 import { Trans, useTranslation } from "react-i18next";
@@ -7,6 +7,8 @@ import muiLogo from "../assets/mui.png";
 import tsLogo from "../assets/typescript.png";
 
 import LastCommits from "../components/LastCommits";
+
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 type AboutProps = {
   setHeaderTitle: (title: string) => void;
@@ -78,6 +80,13 @@ const About: FunctionComponent<AboutProps> = ({ setHeaderTitle }) => {
         </Typography>
       </Grid>
       <Grid item xs={10} mt={15}>
+      
+        <Button variant="contained" startIcon={< GitHubIcon />} target="_blank" href="https://github.com/cocosmos/rapport-stage-erte">
+         Code on Github
+        </Button>
+      
+      </Grid>
+      <Grid item xs={10} mt={5}>
         <Typography variant="h3" color="secondary">
           {t("lastCommits")}
         </Typography>

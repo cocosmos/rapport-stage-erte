@@ -21,11 +21,9 @@ export const cardItems: cardItem[] = [
     id: "erte",
     logo: LogoErte,
     name: "Erte",
-    smallText:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio error voluptatibus tempore magnam illum aut beatae vero eius.",
+    smallText:"test",
     link: "https://www.erte.ch/",
-    longText:
-      "loremfdjsanfndasfndasjk nfads fdasjkf kdjsf dsakjnfkjadsf kjdsafn dasjkfn asdjnf kjdasfnadsjk fndsjkaf dasjnf dasjfn dasjf dasjkfndsa ",
+    longText:"",
     imageSite: "",
   },
   {
@@ -37,8 +35,7 @@ export const cardItems: cardItem[] = [
     smallText:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio error voluptatibus tempore magnam illum aut beatae vero eius.",
     link: "https://musicorner.ch/",
-    longText:
-      "loremfdjsanfndasfndasjk nfads fdasjkf kdjsf dsakjnfkjadsf kjdsafn dasjkfn asdjnf kjdasfnadsjk fndsjkaf dasjnf dasjfn dasjf dasjkfndsa ",
+    longText:"",
     imageSite: "",
   },
   {
@@ -50,8 +47,8 @@ export const cardItems: cardItem[] = [
     smallText:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio error voluptatibus tempore magnam illum aut beatae vero eius.",
     link: "https://bcc-urbanstudios.com/",
-    longText:
-      "loremfdjsanfndasfndasjk nfads fdasjkf kdjsf dsakjnfkjadsf kjdsafn dasjkfn asdjnf kjdasfnadsjk fndsjkaf dasjnf dasjfn dasjf dasjkfndsa ",
+    longText:"",
+
     imageSite: "",
   },
   {
@@ -63,8 +60,8 @@ export const cardItems: cardItem[] = [
     smallText:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio error voluptatibus tempore magnam illum aut beatae vero eius.",
     link: "https://dynaflow.ch/",
-    longText:
-      "loremfdjsanfndasfndasjk nfads fdasjkf kdjsf dsakjnfkjadsf kjdsafn dasjkfn asdjnf kjdasfnadsjk fndsjkaf dasjnf dasjfn dasjf dasjkfndsa ",
+    longText:"",
+
     imageSite: "",
   },
   {
@@ -75,8 +72,7 @@ export const cardItems: cardItem[] = [
     smallText:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio error voluptatibus tempore magnam illum aut beatae vero eius.",
     link: "https://deja-vu-switzerland.ch/",
-    longText:
-      "loremfdjsanfndasfndasjk nfads fdasjkf kdjsf dsakjnfkjadsf kjdsafn dasjkfn asdjnf kjdasfnadsjk fndsjkaf dasjnf dasjfn dasjf dasjkfndsa ",
+    longText:"",
     imageSite: "",
   },
   {
@@ -88,8 +84,7 @@ export const cardItems: cardItem[] = [
     smallText:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio error voluptatibus tempore magnam illum aut beatae vero eius.",
     link: "https://deja-vu-home.ch/",
-    longText:
-      "loremfdjsanfndasfndasjk nfads fdasjkf kdjsf dsakjnfkjadsf kjdsafn dasjkfn asdjnf kjdasfnadsjk fndsjkaf dasjnf dasjfn dasjf dasjkfndsa ",
+    longText:"",
     imageSite: "",
   },
   {
@@ -101,8 +96,7 @@ export const cardItems: cardItem[] = [
     smallText:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio error voluptatibus tempore magnam illum aut beatae vero eius.",
     link: "https://art.deja-vu-collection.com/",
-    longText:
-      "loremfdjsanfndasfndasjk nfads fdasjkf kdjsf dsakjnfkjadsf kjdsafn dasjkfn asdjnf kjdasfnadsjk fndsjkaf dasjnf dasjfn dasjf dasjkfndsa ",
+    longText: "",
     imageSite: "",
   },
   {
@@ -114,8 +108,7 @@ export const cardItems: cardItem[] = [
     smallText:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio error voluptatibus tempore magnam illum aut beatae vero eius.",
     link: "https://deja-vu-collection.ch/",
-    longText:
-      "loremfdjsanfndasfndasjk nfads fdasjkf kdjsf dsakjnfkjadsf kjdsafn dasjkfn asdjnf kjdasfnadsjk fndsjkaf dasjnf dasjfn dasjf dasjkfndsa ",
+    longText:"",
     imageSite: "",
   },
   {
@@ -127,8 +120,7 @@ export const cardItems: cardItem[] = [
     smallText:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio error voluptatibus tempore magnam illum aut beatae vero eius.",
     link: "https://deja-vu-services.ch/",
-    longText:
-      "loremfdjsanfndasfndasjk nfads fdasjkf kdjsf dsakjnfkjadsf kjdsafn dasjkfn asdjnf kjdasfnadsjk fndsjkaf dasjnf dasjfn dasjf dasjkfndsa ",
+    longText:"",
     imageSite: "",
   },
 ];
