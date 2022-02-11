@@ -17,6 +17,12 @@ import {
 import { cardItems } from "./CardItems";
 import BugReportIcon from "@mui/icons-material/BugReport";
 import i18next from "i18next";
+import LooksOneIcon from '@mui/icons-material/LooksOne';
+import LooksTwoIcon from '@mui/icons-material/LooksTwo';
+import Looks3Icon from '@mui/icons-material/Looks3';
+import Looks4Icon from '@mui/icons-material/Looks4';
+import Looks5Icon from '@mui/icons-material/Looks5';
+
 
 function ProjectCard() {
   return (
@@ -43,7 +49,7 @@ function ProjectCard() {
                 <List>
                   <ListItem disablePadding>
                     <ListItemIcon>
-                      <BugReportIcon />
+                      <LooksOneIcon />
                     </ListItemIcon>
                     <ListItemText
                       primary={i18next.t(
@@ -52,10 +58,34 @@ function ProjectCard() {
                     />
                   </ListItem>
                   <ListItem disablePadding>
-                    <ListItemIcon></ListItemIcon>
+                    <ListItemIcon><LooksTwoIcon/></ListItemIcon>
                     <ListItemText
                       primary={i18next.t(
                         `lists2Objects.${element.number}.list`
+                      )}
+                    />
+                  </ListItem>
+                  <ListItem disablePadding>
+                    <ListItemIcon><Looks3Icon/></ListItemIcon>
+                    <ListItemText
+                      primary={i18next.t(
+                        `lists3Objects.${element.number}.list`
+                      )}
+                    />
+                  </ListItem>
+                  <ListItem disablePadding>
+                    <ListItemIcon><Looks4Icon/></ListItemIcon>
+                    <ListItemText
+                      primary={i18next.t(
+                        `lists4Objects.${element.number}.list`
+                      )}
+                    />
+                  </ListItem>
+                  <ListItem disablePadding>
+                    <ListItemIcon><Looks5Icon/></ListItemIcon>
+                    <ListItemText
+                      primary={i18next.t(
+                        `lists5Objects.${element.number}.list`
                       )}
                     />
                   </ListItem>
@@ -71,7 +101,7 @@ function ProjectCard() {
                 </IconButton>
 
                 <Button variant="contained" href={`projects/${element.id}`}>
-                  En savoir plus
+                {i18next.t("see_the_website")}
                 </Button>
               </CardActions>
             </Card>

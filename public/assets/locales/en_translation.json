@@ -18,10 +18,11 @@
   "madeby": "Made by <0>Mipam Guillot</0>",
   "lastCommits": "Last commits :",
   "lastCommitsBy": "Last commits by <0>Github API</0>",
+  "see_the_website": "See the Website",
   "lists1Objects": [
-    { "list": "tom" },
-    { "list": "steve" },
-    { "list": "jack" },
+    { "list": "Creating and editing pages"},
+    { "list": "Woocommerce implementation" },
+    { "list": "Transfer of domain names and emails to infomaniak" },
     { "list": "barn" },
     { "list": "willie" },
     { "list": "willie" },
@@ -30,9 +31,9 @@
     { "list": "willie" }
   ],
   "lists2Objects": [
-    { "list": "tom" },
-    { "list": "steve" },
-    { "list": "jack" },
+    { "list": "Theme modification" },
+    { "list": "Products template" },
+    { "list": "Based on the old WIX site" },
     { "list": "barn" },
     { "list": "willie" },
     { "list": "willie" },
@@ -41,9 +42,9 @@
     { "list": "willie" }
   ],
   "lists3Objects": [
-    { "list": "tom" },
-    { "list": "steve" },
-    { "list": "jack" },
+    { "list": "Creation of extensions" },
+    { "list": "Extension modification" },
+    { "list": "Customisation of the theme" },
     { "list": "barn" },
     { "list": "willie" },
     { "list": "willie" },
@@ -52,9 +53,9 @@
     { "list": "willie" }
   ],
   "lists4Objects": [
-    { "list": "tom" },
-    { "list": "steve" },
-    { "list": "jack" },
+    { "list": "Redesigning the site (good practice)" },
+    { "list": "Pages creation and modification" },
+    { "list": "Optimization of images" },
     { "list": "barn" },
     { "list": "willie" },
     { "list": "willie" },
@@ -63,9 +64,9 @@
     { "list": "willie" }
   ],
   "lists5Objects": [
-    { "list": "tom" },
-    { "list": "steve" },
-    { "list": "jack" },
+    { "list": "Bug resolution" },
+    { "list": "Theme modification" },
+    { "list": "My favorite because it was simple to make and pretty" },
     { "list": "barn" },
     { "list": "willie" },
     { "list": "willie" },
