@@ -18,7 +18,6 @@ import MenuIcon from "@mui/icons-material/Menu";
 import { FunctionComponent, useState } from "react";
 import { FaEmpire, FaJedi } from "react-icons/fa";
 import ListAltRoundedIcon from "@mui/icons-material/ListAltRounded";
-import QueryStatsRoundedIcon from "@mui/icons-material/QueryStatsRounded";
 import GavelRoundedIcon from "@mui/icons-material/GavelRounded";
 import DescriptionIcon from "@mui/icons-material/Description";
 import TemporaryNavBarDrawer from "./TemporaryNavBarDrawer";
@@ -49,11 +48,6 @@ const menuItems: menuItem[] = [
     link: "projects",
     icon: <ListAltRoundedIcon color="inherit" fontSize="medium" />,
   },
-  // {
-  //   name: "learned",
-  //   link: "learned",
-  //   icon: <QueryStatsRoundedIcon color="inherit" fontSize="medium" />,
-  // },
   {
     name: "conclusion",
     link: "conclusion",
@@ -76,7 +70,7 @@ const NavBar: FunctionComponent<NavBarProps> = ({ title, toggleMode }) => {
 
   const [drawerOpen, setDrawerOpen] = useState<boolean>(false);
 
-  const isDownMD = useMediaQuery(theme.breakpoints.down("md"));
+  const isDownMD = useMediaQuery(theme.breakpoints.down("sm"));
 
   const toggleDrawer = () => {
     setDrawerOpen(!drawerOpen);
@@ -95,7 +89,6 @@ const NavBar: FunctionComponent<NavBarProps> = ({ title, toggleMode }) => {
   const handleCloseUserMenu = () => {
     setAnchorElUser(null);
   };
-
   /*Form*/
 
   const [username, setUsername] = useLocalStorage("username", "Mipam Guillot");
@@ -133,16 +126,20 @@ const NavBar: FunctionComponent<NavBarProps> = ({ title, toggleMode }) => {
           <Typography variant="h4" sx={{ flexGrow: 1, color: "white" }}>
             {title}
           </Typography>
-          <TextField
-            id="standard-basic"
-            variant="standard"
-            value={username}
-            onChange={handleChange}
-            sx={{
-              maxWidth: "150px",
-              input: { color: "white", fontSize: "20px" },
-            }}
-          />
+          {isDownMD ? (
+            ""
+          ) : (
+            <TextField
+              id="standard-basic"
+              variant="standard"
+              value={username}
+              onChange={handleChange}
+              sx={{
+                maxWidth: "150px",
+                input: { color: "white", fontSize: "20px" },
+              }}
+            />
+          )}
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title="Open settings">
               <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>

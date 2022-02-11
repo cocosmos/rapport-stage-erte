@@ -19,59 +19,67 @@
   "lastCommits": "Last commits :",
   "lastCommitsBy": "Last commits by <0>Github API</0>",
   "see_the_website": "See the Website",
+  "code_on": "Code on GitHub",
   "lists1Objects": [
-    { "list": "Creating and editing pages"},
+    { "list": "Creating and editing pages" },
     { "list": "Woocommerce implementation" },
     { "list": "Transfer of domain names and emails to infomaniak" },
-    { "list": "barn" },
-    { "list": "willie" },
-    { "list": "willie" },
-    { "list": "willie" },
-    { "list": "willie" },
-    { "list": "willie" }
+    { "list": "Creation of a template for each video" },
+    { "list": "Make it responsive" },
+    { "list": "Make it responsive" },
+    { "list": "Create a website for the event with Woocommerce" },
+    { "list": "Same as Déjà Vu Home" },
+    { "list": "Same as Déjà Vu Home" }
   ],
   "lists2Objects": [
     { "list": "Theme modification" },
     { "list": "Products template" },
     { "list": "Based on the old WIX site" },
-    { "list": "barn" },
-    { "list": "willie" },
-    { "list": "willie" },
-    { "list": "willie" },
-    { "list": "willie" },
-    { "list": "willie" }
+    { "list": "Partial redesign of the site (good practice)" },
+    { "list": "Bug Fixing : buttons" },
+    { "list": "Bug Fixing : EN menu not present" },
+    { "list": "Custom Music Button" },
+    { "list": "" },
+    { "list": "" }
   ],
   "lists3Objects": [
-    { "list": "Creation of extensions" },
+    { "list": "Creation of an extension" },
     { "list": "Extension modification" },
     { "list": "Customisation of the theme" },
-    { "list": "barn" },
-    { "list": "willie" },
-    { "list": "willie" },
-    { "list": "willie" },
-    { "list": "willie" },
-    { "list": "willie" }
+    { "list": "Custom js code" },
+    { "list": "Bug Fixing : color submenu" },
+    { "list": "Bug Fixing : Show sale offers" },
+    { "list": "Make an HTML page for each painting" },
+    { "list": "" },
+    { "list": "" }
   ],
   "lists4Objects": [
     { "list": "Redesigning the site (good practice)" },
     { "list": "Pages creation and modification" },
     { "list": "Optimization of images" },
-    { "list": "barn" },
-    { "list": "willie" },
-    { "list": "willie" },
-    { "list": "willie" },
-    { "list": "willie" },
-    { "list": "willie" }
+    { "list": "Custom CSS" },
+    { "list": "Editing child themes" },
+    { "list": "Editing child themes" },
+    { "list": "Make QR Code in Python" },
+    { "list": "" },
+    { "list": "" }
   ],
   "lists5Objects": [
-    { "list": "Bug resolution" },
-    { "list": "Theme modification" },
-    { "list": "My favorite because it was simple to make and pretty" },
-    { "list": "barn" },
-    { "list": "willie" },
-    { "list": "willie" },
-    { "list": "willie" },
-    { "list": "willie" },
-    { "list": "willie" }
+    { "list": "Script PHP to get all SEO basic" },
+    { "list": "A lot of Excel pages" },
+    { "list": "Script PHP to translate JSON with Deepl API" },
+    { "list": "" },
+    { "list": "" },
+    { "list": "" },
+    { "list": "" },
+    { "list": "" },
+    { "list": "" }
+  ],
+  "introErte": "Engineering firm specialising in solar and Canadian wells.",
+  "introDvs": "Service company owned by the boss's wife",
+  "othersIntro": [
+    { "intro": "High end studio rentals" },
+    { "intro": "Reseller of high-end HiFi equipment" },
+    { "intro": "Thermostatic valve dealer" }
   ]
 }

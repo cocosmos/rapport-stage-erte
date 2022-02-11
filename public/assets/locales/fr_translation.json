@@ -10,5 +10,12 @@
   "about": "A propos",
   "conclusion": "Conclusion",
 
-  "rapport": "Rapport de Stage"
+  "rapport": "Rapport de Stage",
+  "introErte": "Bureau d'ingénieurs spécialisé dans le Solaire et les puits Canadien.",
+  "introDvs": "Entreprise de service appartenant à la femme du patron",
+  "othersIntro": [
+    { "intro": "Location de studios Haut de Gamme" },
+    { "intro": "Revendeur de matériel HiFi haut de Gamme" },
+    { "intro": "Revendeur de vanne thermostatique" }
+  ]
 }

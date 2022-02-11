@@ -1,6 +1,7 @@
 import { FunctionComponent, useEffect } from "react";
 import { useTranslation } from "react-i18next";
-import ScrollDialog from "../components/ProjectCard";
+
+import ProjectCard from "../components/ProjectCard";
 
 type ProjectsProps = {
   setHeaderTitle: (title: string) => void;
@@ -13,7 +14,7 @@ const Projects: FunctionComponent<ProjectsProps> = ({ setHeaderTitle }) => {
   }, [setHeaderTitle, t]);
   return (
     <div>
-      <ScrollDialog />
+      <ProjectCard />
     </div>
   );
 };

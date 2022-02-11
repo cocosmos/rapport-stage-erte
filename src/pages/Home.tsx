@@ -41,9 +41,8 @@ const Home: FunctionComponent<HomeProps> = ({
         </Grid>
         <Grid item xs={12}>
           <Button
-            variant="outlined"
+            variant="contained"
             href="introduction"
-            color="secondary"
             sx={{ font: "large" }}
           >
             <Typography mr={1} variant="button" color="inherit">

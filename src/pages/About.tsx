@@ -8,7 +8,7 @@ import tsLogo from "../assets/typescript.png";
 
 import LastCommits from "../components/LastCommits";
 
-import GitHubIcon from '@mui/icons-material/GitHub';
+import GitHubIcon from "@mui/icons-material/GitHub";
 
 type AboutProps = {
   setHeaderTitle: (title: string) => void;
@@ -80,11 +80,14 @@ const About: FunctionComponent<AboutProps> = ({ setHeaderTitle }) => {
         </Typography>
       </Grid>
       <Grid item xs={10} mt={15}>
-      
-        <Button variant="contained" startIcon={< GitHubIcon />} target="_blank" href="https://github.com/cocosmos/rapport-stage-erte">
-         Code on Github
+        <Button
+          variant="contained"
+          startIcon={<GitHubIcon />}
+          target="_blank"
+          href="https://github.com/cocosmos/rapport-stage-erte"
+        >
+          {t("code_on")}
         </Button>
-      
       </Grid>
       <Grid item xs={10} mt={5}>
         <Typography variant="h3" color="secondary">

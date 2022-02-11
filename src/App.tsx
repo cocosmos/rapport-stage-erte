@@ -18,7 +18,6 @@ import Error from "./pages/Error";
 import Conclusion from "./pages/Conclusion";
 import useLocalStorage from "./hooks/localStorage";
 import getPaletteMode from "./components/getPaletteMode";
-import Learned from "./pages/Learned";
 
 import ProjectsTemplate from "./components/ProjectsTemplate";
 
@@ -138,10 +137,6 @@ const App = () => {
             <Route
               path="about"
               element={<About setHeaderTitle={handleTitleChange} />}
-            />
-            <Route
-            path="Learned"
-              element={<Learned setHeaderTitle={handleTitleChange} />}
             />
             <Route
               path="conclusion"
