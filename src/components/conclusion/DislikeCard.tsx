@@ -7,7 +7,6 @@ import {
   ListItemIcon,
   ListItemText,
   Typography,
-  useTheme,
 } from "@mui/material";
 import { useTranslation } from "react-i18next";
 
@@ -15,12 +14,11 @@ import MoodBadIcon from "@mui/icons-material/MoodBad";
 
 const DislikeCard = () => {
   const { t } = useTranslation();
-  const theme = useTheme();
-  const error = theme.palette.error.main;
+
   return (
     <Grid item xs={12} lg={6} xl={5}>
-      <Card sx={{ maxWidth: "100%", minHeight: 410 }}>
-        <CardContent>
+      <Card sx={{ maxWidth: "100%", minHeight: 450 }}>
+        <CardContent sx={{ height: "100%" }}>
           <List>
             <Typography gutterBottom variant="h3">
               {t(`disliked.0`)}
@@ -29,38 +27,25 @@ const DislikeCard = () => {
               <ListItemIcon>
                 <MoodBadIcon color="error" />
               </ListItemIcon>
-              <ListItemText
-                primary={t(`disliked.1`)}
-                style={{ color: error }}
-              />
+              <ListItemText primary={t(`disliked.1`)} />
             </ListItem>
             <ListItem>
               <ListItemIcon>
                 <MoodBadIcon color="error" />
               </ListItemIcon>
-              <ListItemText
-                primary={t(`disliked.2`)}
-                style={{ color: error }}
-              />
+              <ListItemText primary={t(`disliked.2`)} />
             </ListItem>
             <ListItem>
               <ListItemIcon>
                 <MoodBadIcon color="error" />
               </ListItemIcon>
-              <ListItemText
-                primary={t(`disliked.3`)}
-                style={{ color: error }}
-                className="like"
-              />
+              <ListItemText primary={t(`disliked.3`)} />
             </ListItem>
             <ListItem>
               <ListItemIcon>
                 <MoodBadIcon color="error" />
               </ListItemIcon>
-              <ListItemText
-                primary={t(`disliked.4`)}
-                style={{ color: error }}
-              />
+              <ListItemText primary={t(`disliked.4`)} />
             </ListItem>
           </List>
         </CardContent>

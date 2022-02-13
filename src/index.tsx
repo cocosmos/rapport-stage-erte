@@ -5,12 +5,11 @@ import dark from "./assets/dark.png";
 import "flag-icon-css/css/flag-icons.min.css";
 import App from "./App";
 import { BrowserRouter } from "react-router-dom";
-import { Stack } from "@mui/material";
 
 const LoadingMarkup = (
-  <Stack justifyContent={"center"} alignItems={"center"}>
-    <img src={dark} alt="loading" height={900} width={900} />
-  </Stack>
+  <div className="App">
+    <img src={dark} alt="loading" height={800} width={800} />
+  </div>
 );
 
 ReactDOM.render(

@@ -12,11 +12,12 @@
   "about_this_site": "About this Website",
   "made_with": "Made with :",
   "translated": "Website translated in <0>2</0> languages",
-  "mode": "<0>1</0> Dark mode and <0>1</0> Light mode",
+  "mode": "Dark and Light mode",
   "madeBy": "Made by",
   "lastCommits": "Last commits :",
-  "lastCommitsBy": "Last commits by",
+  "lastCommitsBy": "Last commits by ",
   "see_the_website": "See the Website",
+  "avatarsBy": "Avatars by ",
   "code_on": "Code on GitHub",
   "lists1Objects": [
     { "list": "Creating and editing pages" },
@@ -91,9 +92,28 @@
     "What i Disliked",
     "Build a site without a template",
 
-    "Create the content to put on the site. ",
+    "Create the content (texts, images etc) to put on the site. ",
     "Not developer-oriented enough",
 
     "Having to guess the needs"
+  ],
+  "skills": [
+    "Acquired skills :",
+    "WordPress",
+    "HTML",
+    "CSS",
+    "Javascript",
+    "PHP",
+    "Projects Management",
+    "React",
+    "Typescript"
+  ],
+  "myNextIntern": [
+    "For my next Internship :",
+    "I have to choose a bigger Firm",
+    "I have to choose wisely",
+    "I have to learn harder",
+    "I have to choose a company more technological",
+    "I have to be happy to go"
   ]
 }
