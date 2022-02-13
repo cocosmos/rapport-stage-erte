@@ -5,8 +5,7 @@
   "error": "Erreur 404",
   "home": "Accueil",
   "introduction": "Introduction",
-  "projects": "Sites",
-  "learned": "Appris",
+  "projects": "Projets",
   "about": "A propos",
   "conclusion": "Conclusion",
   "rapport": "Rapport de Stage",
@@ -16,5 +15,104 @@
     { "intro": "Location de studios Haut de Gamme" },
     { "intro": "Revendeur de matériel HiFi haut de Gamme" },
     { "intro": "Revendeur de vanne thermostatique" }
+  ],
+  "about_this_site": "À propos de ce site Web",
+  "made_with": "Fait avec :",
+  "translated": "Site web traduit en <0>2</0> langues",
+  "mode": "Mode sombre et mode clair",
+  "madeBy": "Fait par",
+  "lastCommits": "Derniers commits :",
+  "lastCommitsBy": "Derniers commits par ",
+  "see_the_website": "Voir le site",
+  "avatarsBy": "Avatars par ",
+  "code_on": "Code sur GitHub",
+  "lists1Objects": [
+    { "list": "Création et édition de pages" },
+    { "list": "Implémentation de Woocommerce" },
+    { "list": "Transfert de noms de domaine et d'e-mails sur infomaniak" },
+    { "list": "Création d'un modèle pour chaque vidéo" },
+    { "list": "Le rendre responsive" },
+    { "list": "Le rendre responsive" },
+    { "list": "Créez un site web pour l'événement avec Woocommerce" },
+    { "list": "Comme Déjà Vu Home" },
+    { "list": "Comme Déjà Vu Home" }
+  ],
+  "lists2Objects": [
+    { "list": "Modification du thème" },
+    { "list": "Modèle de produits" },
+    { "list": "Design basé sur l'ancien site WIX" },
+    { "list": "Refonte partielle du site (bonne pratique)" },
+    { "list": "Correction de bugs : boutons" },
+    { "list": "Correction d'un bug : Le menu EN n'est pas présent" },
+    { "list": "Bouton de musique personnalisé" },
+    { "list": "" },
+    { "list": "" }
+  ],
+  "lists3Objects": [
+    { "list": "Création d'une extension" },
+    { "list": "Modification d'extension" },
+    { "list": "Personnalisation du thème" },
+    { "list": "Code js personnalisé" },
+    { "list": "Correction d'un bug : sous-menu couleur" },
+    { "list": "Correction d'un bug : Afficher les offres de vente" },
+    { "list": "Faire une page HTML pour chaque tableau" },
+    { "list": "" },
+    { "list": "" }
+  ],
+  "lists4Objects": [
+    { "list": "Refonte du site (bonne pratique)" },
+    { "list": "Création et modification de pages" },
+    { "list": "Optimisation des images" },
+    { "list": "CSS personnalisé" },
+    { "list": "Modification des thèmes enfants" },
+    { "list": "Modifier les thèmes enfants" },
+    { "list": "Créer des code QR en Python" },
+    { "list": "" },
+    { "list": "" }
+  ],
+  "lists5Objects": [
+    { "list": "Script PHP pour obtenir toutes les bases du référencement" },
+    { "list": "Beaucoup de pages Excel" },
+    { "list": "Script PowerShell pour renommer tous les fichiers" },
+    { "list": "" },
+    { "list": "" },
+    { "list": "" },
+    { "list": "" },
+    { "list": "" },
+    { "list": "" }
+  ],
+
+  "liked": [
+    "Ce que j'ai aimé",
+    "Faire un site web avec un maquette",
+    "L'esprit entreprenarial de l'entreprise",
+    "J'ai appris un large éventail de connaissances (chauffage, écologie, hi-fi, mise en réseau, gestion locative etc...) ",
+    "La bonne ambiance dans l'entreprise"
+  ],
+  "disliked": [
+    "Ce que je n'ai pas aimé",
+    "Construire un site sans maquette",
+    "Créer le contenu (textes, images etc) à mettre sur le site. ",
+    "Pas assez orienté développeur",
+    "Devoir deviner les besoins"
+  ],
+  "skills": [
+    "Les compétences acquises ou amélioré :",
+    "WordPress",
+    "HTML",
+    "CSS",
+    "Javascript",
+    "PHP",
+    "Gestion de projets",
+    "React",
+    "Typescript"
+  ],
+  "myNextIntern": [
+    "Pour mon prochain stage :",
+    "Je dois choisir une plus grande entreprise",
+    "Je dois choisir judicieusement",
+    "Je dois apprendre davantage",
+    "Je dois choisir une entreprise plus technologique",
+    "Je dois être heureux d'aller travailler pour cette entreprise"
   ]
 }

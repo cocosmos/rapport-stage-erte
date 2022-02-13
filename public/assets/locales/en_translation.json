@@ -5,10 +5,17 @@
   "error": "Error 404",
   "home": "Home",
   "introduction": "Introduction",
-  "projects": "Websites",
+  "projects": "Projects",
   "about": "About",
   "conclusion": "Conclusion",
   "rapport": "Internship Report",
+  "introErte": "Engineering firm specialising in solar and Canadian wells.",
+  "introDvs": "Service company owned by the boss's wife",
+  "othersIntro": [
+    { "intro": "High end studio rentals" },
+    { "intro": "Reseller of high-end HiFi equipment" },
+    { "intro": "Thermostatic valve dealer" }
+  ],
   "about_this_site": "About this Website",
   "made_with": "Made with :",
   "translated": "Website translated in <0>2</0> languages",
@@ -74,13 +81,7 @@
     { "list": "" },
     { "list": "" }
   ],
-  "introErte": "Engineering firm specialising in solar and Canadian wells.",
-  "introDvs": "Service company owned by the boss's wife",
-  "othersIntro": [
-    { "intro": "High end studio rentals" },
-    { "intro": "Reseller of high-end HiFi equipment" },
-    { "intro": "Thermostatic valve dealer" }
-  ],
+
   "liked": [
     "What i Liked",
     "Make a Website with a model ",

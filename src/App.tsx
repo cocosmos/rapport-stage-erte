@@ -40,7 +40,6 @@ const App = () => {
   const { t } = useTranslation();
   const [headerTitle, setHeaderTitle] = useState<string>("Home");
   const [mode, setMode] = useLocalStorage<"light" | "dark">("theme", "dark");
-  // const [handleChange, setHandleChange] = useLocalStorage("username", null);
   const handleChangeMode = () => {
     setMode(mode === "light" ? "dark" : "light");
   };
