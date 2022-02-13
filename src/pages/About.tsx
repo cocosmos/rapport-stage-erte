@@ -35,12 +35,8 @@ const About: FunctionComponent<AboutProps> = ({ setHeaderTitle }) => {
           {t("code_on")}
         </Button>
       </Grid>
-      <Grid item xs={10} mt={5}>
-        <Typography variant="h3" color="secondary">
-          {t("lastCommits")}
-        </Typography>
-        <LastCommits />
-      </Grid>
+
+      <LastCommits />
     </Grid>
   );
 };

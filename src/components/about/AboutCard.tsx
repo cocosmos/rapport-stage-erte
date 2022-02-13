@@ -91,7 +91,7 @@ const AboutCard = () => {
               </Link>
             </Typography>
             <Typography variant="body1" color="secondary">
-              {t("lastCommitsBy")}
+              {t("avatarsBy")}
 
               <Link
                 href="https://avatars.dicebear.com/"
