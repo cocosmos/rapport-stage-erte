@@ -29,6 +29,13 @@ const getPaletteMode = (mode: PaletteMode) => ({
             main: "#0473fb",
             contrastText: "#0473fb",
           },
+          success: {
+            main: "#00db07",
+          },
+
+          danger: {
+            main: "#ba0c00",
+          },
         }
       : {
           // palette values for dark mode
@@ -51,11 +58,21 @@ const getPaletteMode = (mode: PaletteMode) => ({
           text: {
             primary: "#dedede",
           },
+          text2: {
+            primary: "#fff",
+          },
           divider: grey[600],
           background: {
             default: "#172130",
             paper: "#172130",
           },
+          success: {
+            main: "#00db07",
+          },
+          danger: {
+            main: "#ba0c00",
+          },
+
           mainWindow: {
             background: "#000b1c",
           },

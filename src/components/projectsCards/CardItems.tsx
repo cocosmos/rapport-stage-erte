@@ -1,11 +1,11 @@
-import LogoErte from "../assets/logo/erte.png";
-import LogoMusicorner from "../assets/logo/mcc.png";
-import LogoDynaflow from "../assets/logo/dynaflow.png";
-import LogoBCC from "../assets/logo/bcc.png";
-import LogoDvs from "../assets/logo/dvs.png";
-import LogoDvh from "../assets/logo/dvh.png";
-import LogoDvss from "../assets/logo/dvss.png";
-import LogoDvc from "../assets/logo/dvc.png";
+import LogoErte from "./logo/erte.png";
+import LogoMusicorner from "./logo/mcc.png";
+import LogoDynaflow from "./logo/dynaflow.png";
+import LogoBCC from "./logo/bcc.png";
+import LogoDvs from "./logo/dvs.png";
+import LogoDvh from "./logo/dvh.png";
+import LogoDvss from "./logo/dvss.png";
+import LogoDvc from "./logo/dvc.png";
 
 type cardItem = {
   id: string;

@@ -1,4 +1,4 @@
-import ChangeLanguage from "../i18next/ChangeLanguages";
+import ChangeLanguage from "../language/ChangeLanguages";
 import {
   IconButton,
   Toolbar,

@@ -6,7 +6,7 @@ import reactLogo from "../assets/react.svg";
 import muiLogo from "../assets/mui.png";
 import tsLogo from "../assets/typescript.png";
 
-import LastCommits from "../components/LastCommits";
+import LastCommits from "../components/about/LastCommits";
 
 import GitHubIcon from "@mui/icons-material/GitHub";
 
@@ -19,7 +19,6 @@ const About: FunctionComponent<AboutProps> = ({ setHeaderTitle }) => {
     setHeaderTitle(i18next.t("about"));
   }, [setHeaderTitle]);
   const { t } = useTranslation();
-  const lang = 6;
 
   return (
     <Grid container spacing={2} justifyContent="center" textAlign={"center"}>
@@ -57,7 +56,6 @@ const About: FunctionComponent<AboutProps> = ({ setHeaderTitle }) => {
           <Trans
             i18nKey="translated"
             components={[<strong>dummyChild</strong>]}
-            values={{ lang }}
           />
         </Typography>
       </Grid>
@@ -68,15 +66,14 @@ const About: FunctionComponent<AboutProps> = ({ setHeaderTitle }) => {
       </Grid>
       <Grid item xs={11}>
         <Typography className="specialNumber" variant="body1" color="secondary">
-          <Trans
-            i18nKey="lastCommitsBy"
-            components={[<strong>dummyChild</strong>]}
-          />
+          {t("lastCommitsBy")}
+          <strong> GitHub API</strong>
         </Typography>
       </Grid>
       <Grid item xs={12} mt={5}>
         <Typography className="specialNumber" variant="body1" color="secondary">
-          <Trans i18nKey="madeby" components={[<strong>dummyChild</strong>]} />
+          {t("madeBy")}
+          <strong> Mipam Guillot</strong>
         </Typography>
       </Grid>
       <Grid item xs={10} mt={15}>

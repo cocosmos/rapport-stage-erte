@@ -6,18 +6,16 @@
   "home": "Home",
   "introduction": "Introduction",
   "projects": "Websites",
-  "learned": "Learned",
   "about": "About",
   "conclusion": "Conclusion",
-
   "rapport": "Internship Report",
   "about_this_site": "About this Website",
   "made_with": "Made with :",
-  "translated": "Website translated in <0>{lang}</0> languages by <0>Deepl API</0>.",
+  "translated": "Website translated in <0>2</0> languages",
   "mode": "<0>1</0> Dark mode and <0>1</0> Light mode",
-  "madeby": "Made by <0>Mipam Guillot</0>",
+  "madeBy": "Made by",
   "lastCommits": "Last commits :",
-  "lastCommitsBy": "Last commits by <0>Github API</0>",
+  "lastCommitsBy": "Last commits by",
   "see_the_website": "See the Website",
   "code_on": "Code on GitHub",
   "lists1Objects": [
@@ -81,5 +79,21 @@
     { "intro": "High end studio rentals" },
     { "intro": "Reseller of high-end HiFi equipment" },
     { "intro": "Thermostatic valve dealer" }
+  ],
+  "liked": [
+    "What i Liked",
+    "Make a Website with a model ",
+    "The entrepreneurial spirit of the company",
+    "Learning a wide range of knowledge (heating, ecology, hi-fi, networking, rental management etc.)",
+    "Good atmosphere in the company"
+  ],
+  "disliked": [
+    "What i Disliked",
+    "Build a site without a template",
+
+    "Create the content to put on the site. ",
+    "Not developer-oriented enough",
+
+    "Having to guess the needs"
   ]
 }

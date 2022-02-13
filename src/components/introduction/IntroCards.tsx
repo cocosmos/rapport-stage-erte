@@ -1,10 +1,10 @@
 import { Card, CardContent, CardMedia, Grid, Typography } from "@mui/material";
 
-import bcc from "../assets/intro/bcc.png";
-import mcc from "../assets/intro/mcc.png";
-import erte from "../assets/intro/erte.png";
-import dyna from "../assets/intro/dyna.png";
-import dvs from "../assets/intro/dvs.png";
+import bcc from "./assets/bcc.png";
+import mcc from "./assets/mcc.png";
+import erte from "./assets/erte.png";
+import dyna from "./assets/dyna.png";
+import dvs from "./assets/dvs.png";
 import { useTranslation } from "react-i18next";
 
 type introItem = {
@@ -14,7 +14,7 @@ type introItem = {
   link: string;
   text: number;
 };
-export const introItems: introItem[] = [
+const introItems: introItem[] = [
   {
     id: "bcc",
     img: bcc,

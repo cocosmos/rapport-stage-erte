@@ -1,6 +1,6 @@
-import "./components/i18next/i18n";
+import "./components/language/i18n";
 import "./scss/import.scss";
-import { useCallback, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import {
   Box,
   createTheme,
@@ -17,9 +17,10 @@ import About from "./pages/About";
 import Error from "./pages/Error";
 import Conclusion from "./pages/Conclusion";
 import useLocalStorage from "./hooks/localStorage";
-import getPaletteMode from "./components/getPaletteMode";
+import getPaletteMode from "./components/theme/getPaletteMode";
 
-import ProjectsTemplate from "./components/ProjectsTemplate";
+import ProjectsTemplate from "./components/projectsCards/ProjectsTemplate";
+import { useTranslation } from "react-i18next";
 
 declare module "@mui/material/styles" {
   interface Palette {
@@ -36,6 +37,7 @@ declare module "@mui/material/styles" {
 }
 
 const App = () => {
+  const { t } = useTranslation();
   const [headerTitle, setHeaderTitle] = useState<string>("Home");
   const [mode, setMode] = useLocalStorage<"light" | "dark">("theme", "dark");
   // const [handleChange, setHandleChange] = useLocalStorage("username", null);
@@ -102,6 +104,10 @@ const App = () => {
       ),
     [mode]
   );
+
+  useEffect(() => {
+    document.title = t("app_title");
+  }, [t]);
 
   return (
     <ThemeProvider theme={theme}>

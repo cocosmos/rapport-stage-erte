@@ -1,6 +1,6 @@
 import i18next from "i18next";
 import { FunctionComponent, useEffect } from "react";
-import IntroCards from "../components/IntroCards";
+import IntroCards from "../components/introduction/IntroCards";
 
 type IntroductionProps = {
   setHeaderTitle: (title: string) => void;

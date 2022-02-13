@@ -1,7 +1,7 @@
 import { FunctionComponent, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 
-import ProjectCard from "../components/ProjectCard";
+import ProjectCard from "../components/projectsCards/ProjectCard";
 
 type ProjectsProps = {
   setHeaderTitle: (title: string) => void;
