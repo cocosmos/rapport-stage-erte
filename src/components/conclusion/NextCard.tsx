@@ -11,9 +11,7 @@ import {
 import { useTranslation } from "react-i18next";
 import BusinessIcon from "@mui/icons-material/Business";
 import SmartToyIcon from "@mui/icons-material/SmartToy";
-import LightbulbIcon from "@mui/icons-material/Lightbulb";
 import SchoolIcon from "@mui/icons-material/School";
-import EmojiEmotionsIcon from "@mui/icons-material/EmojiEmotions";
 import CodeIcon from "@mui/icons-material/Code";
 
 const NextCard = () => {
