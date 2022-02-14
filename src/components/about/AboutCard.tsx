@@ -17,7 +17,7 @@ const AboutCard = () => {
   const { t } = useTranslation();
   return (
     <Grid item xs={12} lg={7} xl={6} sx={{ borderRadius: "50" }}>
-      <Card sx={{ borderRadius: "10%", backgroundColor: "#190026" }}>
+      <Card sx={{ borderRadius: "30px", backgroundColor: "#190026" }}>
         <CardContent>
           <Typography variant="h3" color="secondary">
             {t("made_with")}

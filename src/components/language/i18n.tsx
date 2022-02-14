@@ -12,7 +12,7 @@ i18n
   .use(sprintf)
   .init({
     supportedLngs: ["en", "fr"],
-    fallbackLng: "en",
+    fallbackLng: "fr",
     detection: {
       order: ["localStorage", "htmlTag", "path"],
     },

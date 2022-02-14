@@ -1,7 +1,14 @@
 import { Fragment, useEffect, useState } from "react";
 import axios from "axios";
 import { grey } from "@mui/material/colors";
-import { Grid, List, ListItem, ListItemText, Typography } from "@mui/material";
+import {
+  Grid,
+  List,
+  ListItem,
+  ListItemText,
+  Typography,
+  useTheme,
+} from "@mui/material";
 import { useTranslation } from "react-i18next";
 
 const LastCommits = () => {
@@ -12,6 +19,8 @@ const LastCommits = () => {
       .then((res) => setcommitsData(res.data));
   }, []);
   const { t } = useTranslation();
+  const theme = useTheme();
+  const color = theme.palette.secondary.main;
 
   return (
     <Grid item xs={10} mt={5}>
@@ -23,7 +32,7 @@ const LastCommits = () => {
           <ListItem key={commit.sha}>
             <ListItemText
               primary={commit.commit.message}
-              sx={{ textAlign: "center" }}
+              sx={{ textAlign: "center", color: color }}
               secondary={
                 <Fragment>
                   <Typography

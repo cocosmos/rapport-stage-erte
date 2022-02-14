@@ -14,6 +14,7 @@ import SmartToyIcon from "@mui/icons-material/SmartToy";
 import LightbulbIcon from "@mui/icons-material/Lightbulb";
 import SchoolIcon from "@mui/icons-material/School";
 import EmojiEmotionsIcon from "@mui/icons-material/EmojiEmotions";
+import CodeIcon from "@mui/icons-material/Code";
 
 const NextCard = () => {
   const { t } = useTranslation();
@@ -59,18 +60,14 @@ const itemData = [
   },
   {
     id: 2,
-    icon: <SmartToyIcon color="info" />,
+    icon: <CodeIcon color="info" />,
   },
   {
     id: 3,
-    icon: <LightbulbIcon color="secondary" />,
+    icon: <SchoolIcon color="success" />,
   },
   {
     id: 4,
-    icon: <SchoolIcon color="error" />,
-  },
-  {
-    id: 5,
-    icon: <EmojiEmotionsIcon color="success" />,
+    icon: <SmartToyIcon color="error" />,
   },
 ];
